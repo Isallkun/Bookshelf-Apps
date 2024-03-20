@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <title>Bookshelf Apps</title>
+    </head>
+    <body>
+        <section class="search">
+            <i class='bx bx-search'></i>
+            <input type="search" name="search" id="searchBar" placeholder="cari buku disini" class="box" />
+            <!-- <img src="assets/Search.svg" class="icon" /> -->
+            <ul id="searchResult" class="searchResultContainer">
+                <!--Placeholder for the DOM to render things-->
+            </ul>
+        </section>
+        <div class="middle" id="wrapper">
+            <section class="input" id="inputPlaceholder">
+                <h2 class="title">Data Buku</h2>
+                <form id="form" class="formGroup">
+                    <input type="text" name="title" id="title" placeholder="Judul buku" class="box" required />
+                    <input type="text" name="author" id="author" placeholder="Penulis" class="box" required />
+                    <input type="number" name="date" id="date" class="box" placeholder="Tahun" required />
+                    <input type="submit" value="submit" id="submitBtn" placeholder="Add book" class="box submitbox" />
+                </form>
+            </section>
+            <section class="notRead" id="notReadPlaceholder">
+                <h2 class="title">Buku Yang Belum Dibaca</h2>
+                <div id="notread">
+                    <!--Placeholder for the DOM to render things-->
+                </div>
+            </section>
+            <section class="doneRead" id="doneReadPlaceholder">
+                <h2 class="title">Buku Yang Sudah Dibaca</h2>
+                <div id="read">
+                    <!--Placeholder for the DOM to render things-->
+                </div>
+            </section>
+        </div>
+        <div class="modalPlaceholder" id="modalPlaceholder">
+            <!--Placeholder for the DOM to render things-->    
+        </div>
+        <div class="footer">
+            <span class="footer">
+                Made with &#10084; by Isallkun.
+            </span>
+        </div>
+        <script src="/assets/js/main.js"></script>
+    </body>
+</html>
